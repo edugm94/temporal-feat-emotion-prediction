@@ -11,7 +11,9 @@ get signals filtered and labelled. And example of how to use this script is give
   ```sh
   python setup_data.py -w 60 -p P1 -d 9
   ```
-In the example above, it is prepared signals for participant P1 which has 9 days of sampling data. The pare  
+In the example above, it is prepared signals for participant P1 which has 9 days of sampling data. Also, labels 
+(_happines_, _activeness_, and _mood_) will be extended within a window of 60 minutes (this is set by parameter `-w`).
+
 ## Extract Physiological and Temporal Features 
 
 
