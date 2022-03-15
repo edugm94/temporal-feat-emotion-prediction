@@ -9,8 +9,9 @@ This page shows a brief tutorial about how to use the code.
 Initially, physiological signals are preprocessed, and it is assigned to each datapoint a label. Use `setup_data.py` to 
 get signals filtered and labelled. And example of how to use this script is given below: 
   ```sh
-  python setup_data.py 
+  python setup_data.py -w 60 -p P1 -d 9
   ```
+In the example above, it is prepared signals for participant P1 which has 9 days of sampling data. The pare  
 ## Extract Physiological and Temporal Features 
 
 
