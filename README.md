@@ -14,6 +14,8 @@ get signals filtered and labelled. And example of how to use this script is give
 In the example above, it is prepared signals for participant P1 which has 9 days of sampling data. Also, labels 
 (_happines_, _activeness_, and _mood_) will be extended within a window of 60 minutes (this is set by parameter `-w`).
 
+**NOTE:** Remember to change the path to raw data. This path can be changed in: `src/d00_utils/constants.py`. Inside this 
+file modify the variable `RAW_DATA_PATH`. 
 ## Extract Physiological and Temporal Features 
 
 
