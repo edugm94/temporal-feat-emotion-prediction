@@ -13,6 +13,9 @@ get signals filtered and labelled. And example of how to use this script is give
   ```
 In the example above, it is prepared signals for participant P1 which has 9 days of sampling data. Also, labels 
 (_happines_, _activeness_, and _mood_) will be extended within a window of 60 minutes (this is set by parameter `-w`).
+**NOTE:** You can input several participants with the argument ``-p``, e.g: `-p P1 P2 P3 P4`. In this case you need to 
+specify a list of the corresponding number of sapling days for each participant `-d 9 15 13 13`, which order correspond 
+with the list of participants, i.e. participant P1 has 9 sampling days; participant P2 has 15 sampling days, etc.
 
 The output of running this script consists of a set of .CSV files (one for each signal). The format of this .CSV file is
 the following: 
@@ -41,7 +44,16 @@ Value -1 represents lack of label for that data point.
 **NOTE:** Remember to change the path to raw data. This path can be changed in: `src/d00_utils/constants.py`. Inside this 
 file modify the variable `RAW_DATA_PATH`. 
 ## Extract Physiological and Temporal Features 
-
+It is provided two scripts to extract physiological and temporal features. One can use these scripts as follow. 
+To extract physiological features: 
+  ```sh
+  python extract_feat.py -w 60 -p P1 -d 9
+  ```
+To extract temporal features: 
+  ```sh
+  python extract_feat_temp.py -w 60 -p P1 -d 9
+  ``` 
+**NOTE:** You can input a list of participants and number of sampling days as explained before. 
 
 <!--
 ## Experiments Dataloaders 
