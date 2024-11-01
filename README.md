@@ -55,6 +55,22 @@ To extract temporal features:
   ``` 
 **NOTE:** You can input a list of participants and number of sampling days as explained before. 
 
+
+Please, if you use the code provided and found relevant the work presented in this paper, cite the following reference in your work: 
+
+```
+@article{gutierrez2023wearable,
+  title={Wearable-Based Intelligent Emotion Monitoring in Older Adults during Daily Life Activities},
+  author={Gutierrez Maestro, Eduardo and De Almeida, Tiago Rodrigues and Schaffernicht, Erik and Martinez Mozos, {\'O}scar},
+  journal={Applied Sciences},
+  volume={13},
+  number={9},
+  pages={5637},
+  year={2023},
+  publisher={MDPI}
+}
+```
+
 <!--
 ## Experiments Dataloaders 
  *TODO: To be defined whether dataloaders will be provided or not...*
